@@ -4,9 +4,9 @@ export default {
   titleSuffix: ' – Unofficial Discord Docs',
   logo: (
     <>
-      <span className="mr-2 font-extrabold hidden md:inline">Nextra</span>
+      <span className="mr-2 font-extrabold hidden md:inline">Unofficial Discord Docs</span>
       <span className="text-gray-600 font-normal hidden md:inline">
-        The Next.js Static Site Generator
+        Pretty funny
       </span>
     </>
   ),
@@ -24,7 +24,7 @@ export default {
       <meta name="twitter:url" content="https://nextra.vercel.app" />
       <meta name="og:title" content="Unofficial Discord Docs" />
       <meta name="og:image" content="https://nextra.vercel.app/og.png" />
-      <meta name="apple-mobile-web-app-title" content="Nextra" />
+      <meta name="apple-mobile-web-app-title" content="Unofficial Discord Docs" />
       <link
         rel="apple-touch-icon"
         sizes="180x180"
