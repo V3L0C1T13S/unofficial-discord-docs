@@ -1,0 +1,31 @@
+# Guild Recommendations
+
+Recommends guilds to the user for discovery
+
+## How it works
+
+**This content is SPECULATION**
+
+### Recommendation algorithim
+
+Discords guild recommendation algorithim figures out how to recommend you servers
+based on many different factors.
+
+Behiavor suggests that your game activity is the biggest factor in what servers you
+should be recommended. Many users have reported that after playing games for an
+extended period of time with their game activity turned on, they will be recommended
+servers for that game.
+
+Another big factor is the servers you're currently in. You're much more likely to see
+gaming servers if you're active in gaming servers most of the time.
+
+## Guild Discovery Request object
+| field | type | description |
+| --: | :-- | :-- |
+| recommended_guilds | list of GuildDiscoveryInfo | guilds recommended to the user |
+| load_id | string | unknown - could be used for debugging |
+
+## `GET /guild-recommendations`
+Get recommended guilds for the requester.
+
+Returns a [guild discovery request](#guild-discovery-request-object) object.
