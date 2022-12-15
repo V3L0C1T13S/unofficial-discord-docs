@@ -1,4 +1,5 @@
 {
   "index": "Home",
-  "discordapi": "Discord API"
+  "discordapi": "Discord API",
+  "gateway": "Discord Gateway"
 }

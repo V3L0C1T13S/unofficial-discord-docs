@@ -1,0 +1,12 @@
+# OPCode 13 - Call sync
+OPCode 13, sometimes known as "Call sync", is called by the client to get
+the voice state of users in a given DM/group channel. You should emit each
+voice state to the client under the VOICE_STATE_UPDATE event.
+
+## Call sync request body
+| field | type | description |
+| --: | :-- | :-- |
+| channel_id | string | the channel the client wants voice states for |
+
+## Misc
+This is called "CALL_CONNECT" by the official client
