@@ -1,0 +1,10 @@
+# OPCode 26 - Embedded Activity Close
+OPCode 26 is an OPCode used to leave an activity, ex. YouTube watch together.
+On a successful leave, the [Embedded Activity Update](events/EmbeddedActivityUpdate)
+event will be emitted with the updated activity structure, and an update_code of 3.
+
+## Request body
+| field | type | description |
+| --: | :-- | :-- |
+| application_id | snowflake | The app ID to quit out of |
+| channel_id | snowflake | The channel the activity is in |

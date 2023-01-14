@@ -1,0 +1,32 @@
+# EMBEDDED_ACTIVITY_UPDATE event
+Sent when a user creates, joins, or leaves an activity. The inner payload
+is a [Embedded Activity](#embedded-activity-object) Object.
+
+## Embedded Activity Object
+| field | type | description |
+| --: | :-- | :-- |
+| channel_id | snowflake | The channel this activity was updated in |
+| connections | array of [Activity Connection](#activity-connection-object) | The connections for each user |
+| guild_id | snowflake | The guild the activity is in |
+| embedded_activity | APIActivity object | Information about the activity |
+| guild_id | snowflake | The guild this activity is in |
+| update_code | one of [Activity Update Code](#update-codes) | The type of update this is. |
+| users | array of [APIUser](https://discord.com/developers/docs/resources/user#user-object) | Users participating in the activity |
+
+## Activity Connection Object
+| field | type | description |
+| --: | :-- | :-- |
+| user_id | snowflake | The user who this connection is related to |
+| metadata | [Activity Connection Metadata](#activity-connection-metadata-object) object | The metadata for this connection |
+
+## Activity Connection Metadata Object
+| field | type | description |
+| --: | :-- | :-- |
+| is_eligible_to_host | boolean | If the user with this connection can host the activity |
+
+## Update codes
+| code | description |
+| --: | :-- |
+| 1 | Unknown
+| 2 | Activity was just created
+| 3 | Existing activity is being updated
