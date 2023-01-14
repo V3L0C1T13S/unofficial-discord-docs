@@ -1,6 +1,9 @@
 # CALL_CREATE event
 The CALL_CREATE event is emitted by Discords gateway when a DM or group
-call is started. The inner payload is a [Call Status](#call-status-object)
+call is started. It is also emitted if the user requests it via
+the [Call Sync](../op13) OPCode.
+
+The inner payload is a [Call Status](#call-status-object)
 object.
 
 ### Call Status Object
