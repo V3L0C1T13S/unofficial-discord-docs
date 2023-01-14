@@ -1,0 +1,13 @@
+# CALL_CREATE event
+The CALL_CREATE event is emitted by Discords gateway when a DM or group
+call is started. The inner payload is a [Call Status](#call-status-object)
+object.
+
+### Call Status Object
+| field | type | description |
+| --: | :-- | :-- |
+| channel_id | snowflake | The channel ID the status is for |
+| message_id | snowflake | A message that states who started the call |
+| region | string | The region for the call - used in the region select menu |
+| ringing | array of snowflake | Users that are currently ringing |
+| voice_states | array of Voice State Object | Voice states for each user |
