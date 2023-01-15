@@ -5,9 +5,6 @@ export default {
   logo: (
     <>
       <span className="mr-2 font-extrabold hidden md:inline">Unofficial Discord Docs</span>
-      <span className="text-gray-600 font-normal hidden md:inline">
-        Pretty funny
-      </span>
     </>
   ),
   head: (
@@ -16,8 +13,8 @@ export default {
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="description" content="Pretty funny" />
-      <meta name="og:description" content="Pretty funny" />
+      <meta name="description" content="Unofficial Documentation for Discords API" />
+      <meta name="og:description" content="Unofficial Documentation for Discords API" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://nextra.vercel.app/og.png" />
       <meta name="twitter:site:domain" content="nextra.vercel.app" />
