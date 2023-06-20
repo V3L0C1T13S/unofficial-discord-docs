@@ -1,0 +1,30 @@
+# GUILD_MEMBER_LIST_UPDATE event
+Sent when the Gateway wants to perform a member list operation on the client. Each of these
+"ops" correspond to an operation the client will perform with its local member list.
+
+NOTE: This documentation is heavily based around the implementation by Reflectcord, which
+maintains a full list, and converts it to equivalent OPs for the client.
+
+## OP types
+
+### SYNC
+Sent when the server wants the client to resynchronize a range of OPs. This directly replaces
+items in the member list with those sent by the server.
+
+### UPDATE
+Sent to update an item at a certain index.
+
+NOTE: This requires you to send an entire item, not a partial.
+
+### INSERT
+Insert an item at an index. Note that this does not overwrite an already existing item. If
+you need to replace an item, use UPDATE instead.
+
+### DELETE
+Remove an item at an index via splicing. It's important to note that due to this being a splice
+on the client, it will mutate the indexes of every item. If you need to remove an item without
+mutating the index, use INVALIDATE instead.
+
+### INVALIDATE
+Delete a range of items in the list. This uses a plain old delete, which does not mutate
+the indexes of every item.
